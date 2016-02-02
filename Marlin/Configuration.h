@@ -591,8 +591,9 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,500}  // default steps per unit for Ultimaker
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2555,94.4962144}  // default steps per unit for HICTOP
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2560,94.4962144}  // partially corrected, I hope
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2560,95}  // corrected, I hope
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2560,100}  // corrected, I hope
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2560,95}
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2560,100}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,1600,100}  // T8*2
 //#define DEFAULT_MAX_FEEDRATE          {300, 300, 5, 25}    // (mm/sec)
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 25}    // (mm/sec)
 //#define DEFAULT_MAX_ACCELERATION      {3000,3000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
