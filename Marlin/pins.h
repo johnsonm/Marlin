@@ -71,21 +71,6 @@
 #elif MB(RAMPS_14_SF)
   #define IS_RAMPS_SF
   #include "pins_RAMPS.h"
-#elif MB(RAMPS_PLUS_EFB)
-  #define IS_RAMPS_EFB
-  #include "pins_RAMPS_PLUS.h"
-#elif MB(RAMPS_PLUS_EEB)
-  #define IS_RAMPS_EEB
-  #include "pins_RAMPS_PLUS.h"
-#elif MB(RAMPS_PLUS_EFF)
-  #define IS_RAMPS_EFF
-  #include "pins_RAMPS_PLUS.h"
-#elif MB(RAMPS_PLUS_EEF)
-  #define IS_RAMPS_EEF
-  #include "pins_RAMPS_PLUS.h"
-#elif MB(RAMPS_PLUS_SF)
-  #define IS_RAMPS_SF
-  #include "pins_RAMPS_PLUS.h"
 
 //
 // RAMPS Derivatives - ATmega1280, ATmega2560
@@ -152,11 +137,14 @@
   #include "pins_MEGATRONICS.h"       // ATmega2560
 #elif MB(MEGATRONICS_2)
   #include "pins_MEGATRONICS_2.h"     // ATmega2560
-#elif MB(MEGATRONICS_3) || MB(MEGATRONICS_31)
+#elif MB(MEGATRONICS_3)
+  #include "pins_MEGATRONICS_3.h"     // ATmega2560
+#elif MB(MEGATRONICS_31)
+  #define MEGATRONICS_31
   #include "pins_MEGATRONICS_3.h"     // ATmega2560
 #elif MB(RAMBO)
   #include "pins_RAMBO.h"             // ATmega2560
-#elif MB(MINIRAMBO) || MB(MINIRAMBO_10A)
+#elif MB(MINIRAMBO)
   #include "pins_MINIRAMBO.h"         // ATmega2560
 #elif MB(ELEFU_3)
   #include "pins_ELEFU_3.h"           // ATmega2560
@@ -194,6 +182,8 @@
   #include "pins_MELZI_MAKR3D.h"      // ATmega644P, ATmega1284P
 #elif MB(MELZI_CREALITY)
   #include "pins_MELZI_CREALITY.h"    // ATmega644P, ATmega1284P
+#elif MB(MELZI_TRONXY)
+  #include "pins_MELZI_TRONXY.h"      // ATmega644P, ATmega1284P
 #elif MB(STB_11)
   #include "pins_STB_11.h"            // ATmega644P, ATmega1284P
 #elif MB(AZTEEG_X1)
