@@ -488,10 +488,9 @@
   //#define DEFAULT_Ki 1.54
   //#define DEFAULT_Kd 76.55
   // M303 E0 C8 S230
-  // Kp: 8.75 Ki: 0.48 Kd: 39.98
-  #define DEFAULT_Kp 8.75
-  #define DEFAULT_Ki 0.48
-  #define DEFAULT_Kd 39.98
+  #define DEFAULT_Kp 9.18
+  #define DEFAULT_Ki 0.50
+  #define DEFAULT_Kd 42.13
 
 
 #endif // PIDTEMP
@@ -543,9 +542,9 @@
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
   // This was: M303 E-1 C8 S70
-  #define DEFAULT_bedKp 42.62
-  #define DEFAULT_bedKi 7.7
-  #define DEFAULT_bedKd 157.26
+  #define DEFAULT_bedKp 38.66
+  #define DEFAULT_bedKi 7.20
+  #define DEFAULT_bedKd 138.43
 
 #endif // PIDTEMPBED
 
@@ -731,7 +730,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 426 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1056,7 +1055,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
