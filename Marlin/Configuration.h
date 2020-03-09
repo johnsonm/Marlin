@@ -487,10 +487,10 @@
   //#define DEFAULT_Kp 21.73
   //#define DEFAULT_Ki 1.54
   //#define DEFAULT_Kd 76.55
-  // M303 E0 C8 S230
-  #define DEFAULT_Kp 9.18
-  #define DEFAULT_Ki 0.50
-  #define DEFAULT_Kd 42.13
+  // M303 E0 C8 S215
+  #define DEFAULT_Kp 10.11
+  #define DEFAULT_Ki 0.63
+  #define DEFAULT_Kd 40.33
 
 
 #endif // PIDTEMP
