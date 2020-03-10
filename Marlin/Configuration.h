@@ -479,7 +479,7 @@
   //#define SLOW_PWM_HEATERS      // PWM with very low frequency (roughly 0.125Hz=8s) and minimum state time of approximately 1s useful for heaters driven by a relay
   //#define PID_PARAMS_PER_HOTEND // Uses separate PID parameters for each extruder (useful for mismatched extruders)
                                   // Set/get with gcode: M301 E[extruder number, 0-2]
-  #define PID_FUNCTIONAL_RANGE 2 // If the temperature difference between the target temperature and the actual temperature
+  #define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
@@ -488,9 +488,9 @@
   //#define DEFAULT_Ki 1.54
   //#define DEFAULT_Kd 76.55
   // M303 E0 C8 S230
-  #define DEFAULT_Kp 10.15
-  #define DEFAULT_Ki 0.66
-  #define DEFAULT_Kd 39.07
+  #define DEFAULT_Kp 9.51
+  #define DEFAULT_Ki 0.59
+  #define DEFAULT_Kd 38.32
 
 
 #endif // PIDTEMP
@@ -542,9 +542,9 @@
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
   // This was: M303 E-1 C8 S70
-  #define DEFAULT_bedKp 38.66
-  #define DEFAULT_bedKi 7.20
-  #define DEFAULT_bedKd 138.43
+  #define DEFAULT_bedKp 41.36
+  #define DEFAULT_bedKi 7.48
+  #define DEFAULT_bedKd 152.51
 
 #endif // PIDTEMPBED
 
