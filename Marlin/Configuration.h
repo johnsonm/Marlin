@@ -488,14 +488,10 @@
   //#define DEFAULT_Kp 21.73
   //#define DEFAULT_Ki 1.54
   //#define DEFAULT_Kd 76.55
-  // M303 E0 C8 S230
-  //#define DEFAULT_Kp 9.51
-  //#define DEFAULT_Ki 0.59
-  //#define DEFAULT_Kd 38.32
-  // It is overshooting. Slow down response
-  #define DEFAULT_Kp 9
-  #define DEFAULT_Ki 0.59
-  #define DEFAULT_Kd 30
+  // M303 E0 C8 S250
+  #define DEFAULT_Kp 7.31
+  #define DEFAULT_Ki 0.31
+  #define DEFAULT_Kd 43.65
 
 
 #endif // PIDTEMP
